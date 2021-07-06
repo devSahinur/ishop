@@ -37,7 +37,7 @@
 .sidebarMenuItem.active .sidebarMenuIcon{
     transform: scale(1);
     fill: #1a1a2c !important;
-    stroke-width: none !important;
+    stroke-width: none !important; 
     stroke: transparent !important;
 }
 
