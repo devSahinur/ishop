@@ -1,5 +1,5 @@
 .sidebar{
-    max-width: 5rem;
+    min-width: 5rem;
     width: clamp(80px, 10vw, 100px);
     height: 100vh;
     position: fixed;
