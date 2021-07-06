@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from "framer-motion";
+import CarouselBannar from '../components/CarouselBannar/CarouselBannar'
 
 const Home = () => {
     return (
@@ -8,7 +9,8 @@ const Home = () => {
             animate="in"
             exit="out"
         >
-            
+            <CarouselBannar/>
+
         </motion.div>
     );
 };
