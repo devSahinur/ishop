@@ -5,6 +5,7 @@ import { Switch, Route, useLocation } from "react-router-dom";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Header from './components/Header/Header'
 import './App.css';
+import Home from "./pages/Home";
 
 function App() {
   return (
@@ -15,8 +16,8 @@ function App() {
           <AnimateSharedLayout>
             <Header/>
             <Switch>
-              <Route path="/login">
-                {/* <UserPage type="login" /> */}
+              <Route exact path="/">
+                <Home/>
               </Route>
             </Switch>
 
