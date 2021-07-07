@@ -2,7 +2,7 @@ import React from 'react';
 import SearchRoundedIcon from "@material-ui/icons/SearchRounded";
 import { motion } from "framer-motion";
 import { useHistory, useLocation } from "react-router-dom";
-import DropDown from './DropDown/DropDown';
+import DropDown from '../DropDown/DropDown';
 import ishopLogo from '../../images/nab-logo.png'
 import './Header.css'
 

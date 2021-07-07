@@ -78,9 +78,9 @@
 .footerCurrDropDown{
     margin-right: 0;
 }
-.footerDropDown .dropDownMenu{
-    top: auto;
-    bottom: calc(100% + 0.5rem);
+.footerCurrDropDown .DropDownMenu{
+    top: 0 auto !important;
+    bottom: calc(100% + .5rem) !important;
 }
 @media (max-width: 550px) {
     .footerInner{

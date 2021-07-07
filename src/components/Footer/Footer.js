@@ -1,6 +1,6 @@
 import React from 'react';
 import ishopLogo from '../../images/nab-logo.png'
-import DropDown from '../Header/DropDown/DropDown'
+import DropDown from '../DropDown/DropDown'
 import './Footer.css'
 
 const languages = [
