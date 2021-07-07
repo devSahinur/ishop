@@ -7,6 +7,7 @@ import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import './App.css';
 import Home from "./pages/Home";
+import User from "./pages/User";
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
           <AnimateSharedLayout>
             <Header/>
             <Switch>
+              <Route path="/signup">
+                <User type="signup" />
+              </Route>
               <Route exact path="/">
                 <Home/>
               </Route>
