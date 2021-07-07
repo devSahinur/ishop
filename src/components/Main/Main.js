@@ -1,9 +1,17 @@
 import React from 'react';
+import Product from '../Product/Product';
+import data from '../../products.json';
 
 const Main = () => {
+
+
     return (
-        <div>
-            <h1>This is main content page</h1>
+        <div className="main">
+            <div className="products">
+                {
+                    data.map((product) => <Product product={product} key={product.id} />)
+                }
+            </div>
         </div>
     );
 };

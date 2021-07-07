@@ -1,0 +1,5 @@
+.products{
+    margin: 2rem;
+    display: flex;
+    flex-wrap: row wrap;
+}
