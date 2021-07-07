@@ -4,6 +4,7 @@ import LoadingBar from "react-top-loading-bar";
 import { Switch, Route, useLocation } from "react-router-dom";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
 import './App.css';
 import Home from "./pages/Home";
 
@@ -24,6 +25,8 @@ function App() {
           </AnimateSharedLayout>
         </AnimatePresence>
       </div>
+      <div></div>
+      <Footer/>
     </div>
   );
 }

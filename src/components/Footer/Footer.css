@@ -1,0 +1,111 @@
+.footer{
+    margin-top: auto;
+    background: #eaeaea;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.footerInner{
+  padding-left: clamp(80px, 10vw, 100px);
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+.footerLinks{
+    display: flex;
+    padding: 3rem;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footerRow{
+    margin-right: 3rem;
+    width: calc(25% - 3rem);
+}
+.footerRow h6{
+    margin-bottom: 0.5rem;
+    white-space: nowrap;
+}
+.footerRow ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.footerRow ul li{
+    padding: 0;
+    margin-bottom: 0.25rem;
+    font-size: 0.85rem;
+    opacity: 0.6;
+    color: #1a1a2c;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+.footerRow ul li:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+.footerBottom{
+    padding: 2rem 3rem;
+    display: flex;
+    align-items: center;
+    background: #eaeaea;
+    border-top: 1px solid rgba(26, 26, 44, 0.05);
+}
+.footerLogo {
+    height: 4rem;
+    width: auto;
+    margin-right: 1rem;
+}
+.footerCopy{
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0.75;
+}
+.footerCopy a{
+    color: #ff0b75;
+    line-height: 1.2;
+    font-weight: bold;
+    transition: all 0.2s;
+    border-bottom: 1px dotted #99114c;
+}
+.footerCopy a:hover{
+    color: #1D9CD5;
+    border-bottom: 1px dotted #1D9CD5;
+}
+.footerDropDownSpan{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.footerCurrDropDown{
+    margin-right: 0;
+}
+.footerDropDown .dropDownMenu{
+    top: auto;
+    bottom: calc(100% + 0.5rem);
+}
+@media (max-width: 550px) {
+    .footerInner{
+        padding: 0;
+    }
+    .footerLinks{
+        padding: 5rem 1.5rem 1.5rem 1.5rem;
+        flex-flow: column nowrap;
+    }
+    .footerRow{
+        margin: 0;
+        margin-bottom: 1.5rem;
+    }
+    .footerCopy{
+        padding: 0.5rem 0 1rem 0;
+    }
+    .footerDropDownSpan{
+        margin: 0;
+    }
+    .footerBottom{
+        padding: 1.5rem;
+        flex-flow: column nowrap;
+    }
+    .footerLangDropDown,
+    .footerCurrDropDown{
+        margin: 0.5rem;
+    }
+}
