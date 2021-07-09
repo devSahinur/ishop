@@ -25,7 +25,7 @@ const iconStyle = (fontsize) => {
 
 const Sidebar = () => {
     const [sidebarActive, setSidebarActive] = useState(false);
-
+    const user = true;
 
     const toggleSidebar = () =>{
         setSidebarActive((sidebarActive) => !sidebarActive)
@@ -98,7 +98,7 @@ const Sidebar = () => {
                     />
                 </NavLink>
             </div>
-            {
+            {user ? (
                 <img
                 src={defaultImage}
                 alt='User'
@@ -110,7 +110,17 @@ const Sidebar = () => {
                 data-for="sidebarTooltip"
                 className="sidebarAvatar"
               />
-            }
+            ) : (
+                <NavLink
+                    to='/login'
+                    className='sidebarMenuItem'
+                    activeClassName=""
+                >
+
+                </NavLink>
+            )
+        
+        }
         </div>
     );
 };
